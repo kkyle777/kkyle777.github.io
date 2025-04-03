@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <style>
+        body {
+            background-color: #F0F8FF;
+            font-family: sans-serif;
+            margin: 20px;
+            display: flex;
+        }
+
+        .profile-container {
+            width: 30%;
+            margin-right: 30px;
+        }
+
+        .profile-picture {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .details-container {
+            width: 20%;
+        }
+
+        h1 {
+            color: #0a0a0a;
+            font-size: 70px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .details-table {
+            width: 200%;
+            border-collapse: collapse;
+        }
+
+        .details-table th, .details-table td {
+            border: 1px solid #0a0a0a;
+            padding: 7px;
+            text-align: left;
+        }
+
+        .details-table th {
+            background-color: #B9D9EB;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .profile-container {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .details-container {
+                width: 100%;
+            }
+        }
+
+        .detail {
+            width: 194%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .back-home {
+            padding: 10px 20px;
+            background-color: #B9D9EB; 
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .back-home:hover {
+            background-color: #0036b1;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <button class="back-home" onclick="window.location.href='porporlio.html'">Back to Home</button>
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-picture">
+    </div>
+    <div class="details-container">
+        <h1>Hello</h1>
+
+        <section>
+            <h2>Personal Information</h2>
+            <table class="details-table">
+                <tr>
+                    <th>Name</th>
+                    <td>Kyle Flores Pachica</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>kylexdd@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>09999999999</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>Kawit, Cavite</td>
+                </tr>
+            </table>
+        </section>
+
+        <div class="detail">
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Kyle. 22 years from Kawit, Cavite.<br>
+                I like playing games such as League of Legends and Teamfight Tactics.<br>
+                I like editing photos and videos.</p>
+        </section>
+
+        <section>
+            <h2>GitHub</h2>
+            <p><a href="https://github.com/janedoe">GitHub Profile</a></p>
+        </section>
+    </div>
+    </div>
+    
+
+</body>
+</html>
